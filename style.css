@@ -1,0 +1,51 @@
+:root{--bg:#0b0a0c;--panel:#151317;--line:#2a2529;--text:#e9e3da;--dim:#a39b91;--red:#c62f22;--red2:#e5523f;--gold:#e8b25a}
+*{box-sizing:border-box}
+html,body{margin:0;background:var(--bg);color:var(--text);font-family:Georgia,"Times New Roman",serif;line-height:1.6}
+a{color:var(--red2)}
+.wrap{max-width:960px;margin:0 auto;padding:0 20px}
+header.top{border-bottom:1px solid var(--line);background:#09080a}
+header.top .wrap{display:flex;align-items:center;gap:14px;min-height:64px;flex-wrap:wrap}
+header.top img{width:34px;height:34px;border-radius:6px}
+header.top .brand{font-weight:bold;letter-spacing:.18em;text-transform:uppercase;color:var(--text);text-decoration:none}
+header.top nav{margin-left:auto;display:flex;gap:18px;font-family:Arial,Helvetica,sans-serif;font-size:14px}
+header.top nav a{color:var(--dim);text-decoration:none}
+header.top nav a:hover{color:var(--text)}
+.hero{position:relative;min-height:520px;display:flex;align-items:flex-end;background:#000 url(banner.jpg) center/cover no-repeat}
+.hero:after{content:"";position:absolute;inset:0;background:linear-gradient(180deg,rgba(0,0,0,.15) 0%,rgba(11,10,12,.55) 55%,var(--bg) 100%)}
+.hero .wrap{position:relative;z-index:1;padding-bottom:48px}
+.hero h1{margin:0;font-size:clamp(40px,8vw,84px);letter-spacing:.12em;color:var(--red);text-shadow:0 0 24px rgba(198,47,34,.55),0 3px 0 #000}
+.hero p.tag{margin:6px 0 24px;letter-spacing:.35em;text-transform:uppercase;color:var(--dim);font-size:14px;font-family:Arial,Helvetica,sans-serif}
+.btn{display:inline-block;padding:14px 26px;border-radius:6px;background:var(--red);color:#fff;text-decoration:none;font-family:Arial,Helvetica,sans-serif;font-weight:bold;letter-spacing:.06em}
+.btn:hover{background:var(--red2)}
+.btn.off{background:#3a3236;color:#cfc6bb;cursor:default}
+.meta{font-family:Arial,Helvetica,sans-serif;font-size:13px;color:var(--dim);margin-top:10px}
+section{padding:46px 0;border-bottom:1px solid var(--line)}
+section h2{margin:0 0 16px;font-size:26px;color:var(--gold);letter-spacing:.04em}
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(380px,1fr));gap:14px}
+.card{background:var(--panel);border:1px solid var(--line);border-radius:8px;padding:18px}
+.card h3{margin:0 0 6px;font-size:18px;color:var(--text)}
+.card p{margin:0;color:var(--dim);font-size:15px}
+.legal h1{font-size:34px;color:var(--red);letter-spacing:.06em;margin:36px 0 4px}
+.legal h2{color:var(--gold);font-size:21px;margin:30px 0 8px}
+.legal h3{font-size:17px;margin:20px 0 6px}
+.legal p,.legal li{color:#d7d0c6;font-size:16px}
+.legal .lang{margin-top:44px;padding-top:20px;border-top:1px solid var(--line)}
+footer{padding:28px 0 40px;font-family:Arial,Helvetica,sans-serif;font-size:13px;color:var(--dim)}
+footer a{color:var(--dim);margin-right:16px}
+@media (max-width:600px){.grid{grid-template-columns:1fr}header.top nav{margin-left:0;width:100%;padding-bottom:10px}.hero{min-height:420px}}
+.hero.studio{min-height:440px}
+.hero.studio h1{color:var(--text);letter-spacing:.2em;font-size:clamp(36px,7vw,72px)}
+.hero.studio h1 span{color:var(--red)}
+.games{display:grid;grid-template-columns:repeat(auto-fit,minmax(300px,1fr));gap:18px}
+.game{display:block;background:var(--panel);border:1px solid var(--line);border-radius:10px;overflow:hidden;text-decoration:none;color:var(--text);transition:transform .15s,border-color .15s}
+.game:hover{transform:translateY(-3px);border-color:var(--red)}
+.game .pic{height:170px;background:#000 center/cover no-repeat}
+.game .body{padding:16px 18px 18px}
+.game h3{margin:0 0 4px;font-size:21px;letter-spacing:.06em}
+.game .genre{font-family:Arial,Helvetica,sans-serif;font-size:12px;letter-spacing:.2em;text-transform:uppercase;color:var(--red2)}
+.game p{color:var(--dim);margin:8px 0 0;font-size:15px}
+.game.soon{border-style:dashed;cursor:default}
+.game.soon:hover{transform:none;border-color:var(--line)}
+.game.soon .pic{display:flex;align-items:center;justify-content:center;background:#100e11;color:#4a4146;font-size:64px}
+.crumbs{font-family:Arial,Helvetica,sans-serif;font-size:13px;color:var(--dim);padding-top:18px}
+.crumbs a{color:var(--dim)}
