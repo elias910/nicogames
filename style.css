@@ -49,3 +49,8 @@ footer a{color:var(--dim);margin-right:16px}
 .game.soon .pic{display:flex;align-items:center;justify-content:center;background:#100e11;color:#4a4146;font-size:64px}
 .crumbs{font-family:Arial,Helvetica,sans-serif;font-size:13px;color:var(--dim);padding-top:18px}
 .crumbs a{color:var(--dim)}
+.hero.cc h1{color:#e8b25a;text-shadow:0 0 24px rgba(170,110,255,.6),0 3px 0 #000}
+ol.steps{counter-reset:s;list-style:none;padding:0;margin:18px 0}
+ol.steps li{counter-increment:s;position:relative;padding:12px 14px 12px 58px;margin-bottom:10px;background:var(--panel);border:1px solid var(--line);border-radius:8px}
+ol.steps li:before{content:counter(s);position:absolute;left:14px;top:10px;width:30px;height:30px;border-radius:50%;background:var(--red);color:#fff;font-family:Arial,Helvetica,sans-serif;font-weight:bold;display:flex;align-items:center;justify-content:center}
+.note{background:#1d1416;border:1px solid #4a2a25;border-radius:8px;padding:12px 16px;color:#e9c9b9}
