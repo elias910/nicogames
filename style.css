@@ -54,3 +54,20 @@ ol.steps{counter-reset:s;list-style:none;padding:0;margin:18px 0}
 ol.steps li{counter-increment:s;position:relative;padding:12px 14px 12px 58px;margin-bottom:10px;background:var(--panel);border:1px solid var(--line);border-radius:8px}
 ol.steps li:before{content:counter(s);position:absolute;left:14px;top:10px;width:30px;height:30px;border-radius:50%;background:var(--red);color:#fff;font-family:Arial,Helvetica,sans-serif;font-weight:bold;display:flex;align-items:center;justify-content:center}
 .note{background:#1d1416;border:1px solid #4a2a25;border-radius:8px;padding:12px 16px;color:#e9c9b9}
+/* Menü "Rechtliches" (aufklappbar) */
+details.menu{position:relative}
+details.menu summary{list-style:none;cursor:pointer;color:var(--dim)}
+details.menu summary::-webkit-details-marker{display:none}
+details.menu summary:after{content:" ▾";font-size:11px}
+details.menu[open] summary,details.menu summary:hover{color:var(--text)}
+details.menu .drop{position:absolute;right:0;top:28px;z-index:20;min-width:190px;background:var(--panel);border:1px solid var(--line);border-radius:8px;padding:6px;box-shadow:0 8px 24px rgba(0,0,0,.5)}
+details.menu .drop a{display:block;padding:8px 10px;border-radius:6px;color:var(--dim)}
+details.menu .drop a:hover{background:#221e24;color:var(--text)}
+/* Updates */
+.upd{background:var(--panel);border:1px solid var(--line);border-radius:10px;padding:18px 20px;margin-bottom:14px}
+.upd .head{display:flex;flex-wrap:wrap;gap:10px;align-items:baseline}
+.upd h3{margin:0;font-size:20px}
+.upd .ver{font-family:Arial,Helvetica,sans-serif;font-size:12px;letter-spacing:.12em;background:var(--red);color:#fff;border-radius:4px;padding:2px 8px}
+.upd .date{font-family:Arial,Helvetica,sans-serif;font-size:13px;color:var(--dim)}
+.upd ul{margin:10px 0 0;padding-left:20px;color:#d7d0c6}
+.upd li{margin:3px 0}
